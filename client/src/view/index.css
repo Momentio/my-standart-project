@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Bender";  
+    src: url("./fonts/Bender.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color2);
+    font-family: "Bender";
+    color: var(--color1);
+    letter-spacing: 2px;
+}
+
+:root{
+    --color1: #04C4D9;
+    --color2: #011826;
+    --color3: #012340;
+    --color4: #023E73;
+    --color5: #035AA6;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+@media  screen and (max-width:320px), screen and (min-width:320px){
+    body{
+        font-size: 14px;
+    }
+
+    .table th, .table td{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px){
+    body{
+        font-size: 16px;
+    }
+
+    .table th, .table td{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:1120px){
+    body{
+        font-size: 20px;
+    }
+
+    .table th, .table td{
+        font-size: 18px;
+    }
+}
